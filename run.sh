@@ -3,7 +3,7 @@ cd daily_arxiv
 scrapy crawl arxiv -o ../data/${today}_1.jsonl
 
 cd ..
-python .\Cleanupjson.py ./data/${today}_1.jsonl ./data/${today}.jsonl
+python Cleanupjson.py ./data/${today}_1.jsonl ./data/${today}.jsonl
 rm -rf ./data/${today}_1.jsonl
 
 # cd ../ai
